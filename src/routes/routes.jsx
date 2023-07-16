@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
                 element: <App />
             },
             {
-                path: 'nosotros',
+                path: '/nosotros',
                 element: <Nosotros />
             },
             {
