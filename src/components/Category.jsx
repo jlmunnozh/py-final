@@ -8,11 +8,11 @@ const Category = () => {
 
     useEffect(() => {
         const readStrapi = async () => {
-            const url = 'http://34.94.8.154/api/menu-inicios?populate=imagen'
+            const url = 'https://jlasolutionstech.site/api/menu-inicios?populate=imagen'
             const options = {
                 method: 'GET',
                 headers: {
-                    authorization: 'Bearer 02ca4855063e3bb3ca234ea64b9df42fd09f3fdab73569d3133cb90ba8b8bd61ddb7bcec8d0b88a95791a7b2c28a8bd01c82f653851a033926170d4af6e181ff29ec0c2786c115bfa691e50fc8a02e4e8fece61ef06bf03453e3350a0b4ab0b13240d746bfecd890c37ca3c5f6d137218ad48e79c0aaab467ba1cdbab1eabf54'
+                    authorization: 'Bearer 4f66731d370706735c2ba2fd37dbd50c449b612b404547c3d0e6d1e74182f2254d10202cbadd66486b9fd5e93a2323cca8b3d82c0b03861faab8cb38343ceacd629a13724a3f6f8debc92b7e7ca966f5db506d30c9ae021045990dc755890e31a9d9dd1203b02419c5578558fb2df0a523b2ef70e6a7ecf43f4d3cd57e4a5da5'
                 }
             };
             const response = await fetch(url, options);
@@ -39,7 +39,7 @@ const Category = () => {
                                         <div key={element.id}>
                                             <Link to={href}>
                                                 <img
-                                                    src={'http://34.94.8.154' + url}
+                                                    src={'https://jlasolutionstech.site' + url}
                                                     alt={title}
                                                     className="w-full h-64 object-cover rounded-2xl overflow-hidden transition-shadow hover:shadow-xl hover:shadow-sky-800 border-sky-600 border-2"
                                                 />
